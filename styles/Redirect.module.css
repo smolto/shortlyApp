@@ -1,0 +1,33 @@
+.content {
+  height: 100vh;
+}
+
+.centerElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.span {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  font-size: 40px;
+  border-right: 4px solid;
+  width: 15ch;
+  animation: typing 2s steps(15), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
