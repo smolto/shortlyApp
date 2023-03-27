@@ -10,9 +10,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const data = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/hash/${query.hash}`
-      );
+      const data = await fetch(`/api/hash/${query.hash}`);
       const json = await data.json();
 
       return json;

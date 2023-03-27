@@ -25,7 +25,7 @@ export default function Home() {
     try {
       if (userUrl.length <= 5) return setIsError(true);
       setIsLoading(true);
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/hash`, {
+      const response = await fetch(`/api/hash`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
