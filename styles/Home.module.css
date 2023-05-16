@@ -1,5 +1,5 @@
 .main {
-  margin-top: 2rem;
+  margin: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 54px;
+  font-size: 40px;
   margin-bottom: 2rem;
   font-weight: 700;
 }
@@ -24,16 +24,16 @@
 .form {
   display: grid;
   grid-auto-flow: row;
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: var(--grey);
   border-radius: 10px;
-  min-width: 720px;
   gap: 1rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
 .form--title {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -41,6 +41,10 @@
   display: grid;
   grid-auto-flow: row;
   gap: 0.5rem;
+}
+
+.form--item label {
+  font-size: 16px;
 }
 
 .form--input {
@@ -147,6 +151,28 @@
   border-radius: 50%;
 
   animation: spin 1s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
+  .title {
+    font-size: 54px;
+  }
+
+  .form {
+    max-width: 720px;
+  }
+
+  .form--title {
+    font-size: 24px;
+  }
+
+  .form--item label {
+    font-size: 16px;
+  }
 }
 
 @keyframes spin {
